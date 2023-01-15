@@ -5,8 +5,9 @@
   "main": "script.js",
   "scripts": {
     "dev": "parcel index.html --open",
-    "build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url ./",
-    "build": "npm run clean && npm run build:parcel"
+    "build": "parcel build index.html",
+    "start": "parcel index.html",
+    "deploy": "parcel build --public-url ./dist"
   },
   "keywords": [],
   "author": "",
